@@ -79,6 +79,37 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("0Vj1PM1vDjn6xSZi9"); // Your Public Key
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        console.log("Submit button clicked!"); // Debugging log
+
+        let templateParams = {
+            first_name: document.getElementById("first_name").value,
+            last_name: document.getElementById("last_name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        };
+
+        console.log("Sending message with:", templateParams); // Debugging log
+
+        emailjs.send("kanchon", "template_hsekq2u", templateParams)
+            .then(function (response) {
+                console.log("SUCCESS!", response);
+                alert("Message sent successfully!");
+            }, function (error) {
+                console.error("FAILED...", error);
+                alert("Failed to send message. Check console for details.");
+            });
+
+        document.getElementById("contact-form").reset();
+    });
+});
+
 
 //   skill Progress bar 
 
@@ -184,4 +215,3 @@ ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top
 ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
-
