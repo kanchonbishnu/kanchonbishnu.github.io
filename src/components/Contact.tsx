@@ -32,7 +32,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/kanchon",
+    href: "https://github.com/kanchonbishnu",
   },
   {
     icon: ExternalLink,
@@ -75,7 +75,7 @@ const Contact = () => {
                       </div>
                       <p className="text-sm text-muted-foreground mb-1">{item.label}</p>
                       {item.href ? (
-                        <a 
+                        <a
                           href={item.href}
                           className="font-semibold text-foreground hover:text-primary transition-colors"
                         >
@@ -90,9 +90,7 @@ const Contact = () => {
               </div>
 
               <div className="pt-6 border-t">
-                <p className="text-center text-muted-foreground mb-6">
-                  Connect with me on social platforms
-                </p>
+                <p className="text-center text-muted-foreground mb-6">Connect with me on social platforms</p>
                 <div className="flex flex-wrap justify-center gap-4">
                   {socialLinks.map((link, index) => {
                     const Icon = link.icon;
