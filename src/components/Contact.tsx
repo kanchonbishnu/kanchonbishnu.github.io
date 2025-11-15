@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, Facebook, Instagram } from "lucide-react";
 
 const contactInfo = [
   {
@@ -43,6 +43,16 @@ const socialLinks = [
     icon: ExternalLink,
     label: "ResearchGate",
     href: "https://www.researchgate.net/profile/Kanchon-Bishnu",
+  },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://www.facebook.com/kanchonkumarbishnu",
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    href: "https://www.instagram.com/kanchonkumarbishnu",
   },
 ];
 

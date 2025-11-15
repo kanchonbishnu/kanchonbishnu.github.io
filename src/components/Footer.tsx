@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -19,6 +19,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
@@ -27,12 +28,41 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
+              href="https://www.researchgate.net/profile/Kanchon-Bishnu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="ResearchGate"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/kanchonkumarbishnu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/kanchonkumarbishnu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
               href="mailto:kbishnu@calstatela.edu"
               className="p-2 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all"
+              aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
