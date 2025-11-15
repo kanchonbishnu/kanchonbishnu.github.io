@@ -33,9 +33,19 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            KKB
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              KKB
+            </a>
+            <Button
+              size="sm"
+              variant="outline"
+              className="hidden sm:flex"
+              asChild
+            >
+              <a href="#contact">Contact</a>
+            </Button>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
