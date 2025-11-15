@@ -11,19 +11,19 @@ const About = () => {
           <Card className="p-8 shadow-lg border-2 hover:shadow-xl transition-shadow">
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                I am an <strong className="text-foreground">AI Research Scientist</strong> in the Department of Computer Science at <strong className="text-foreground">California State University, Los Angeles</strong>, where my work focuses on advancing intelligent systems through machine learning, health informatics, cybersecurity analytics, and data-driven automation.
+                I am <strong className="text-foreground">Kanchon Kumar Bishnu</strong>, a 27-year-old <strong className="text-foreground">AI Research Scientist, Software Engineer, and Cybersecurity Specialist</strong> with a research focus that spans artificial intelligence, machine learning, biomedical computation, and security analytics. My work aims to advance intelligent systems capable of addressing complex real-world challenges in healthcare, cybersecurity, and sustainable technologies.
               </p>
               <p>
-                With more than <strong className="text-foreground">fifteen peer-reviewed publications</strong> in leading journals—including IEEE Access, IEEE Open Journal of the Computer Society, Elsevier, MDPI, Springer Nature, and Tech Science Press—I actively contribute to interdisciplinary research bridging computer science, healthcare, financial security, and sustainable intelligent systems.
+                I have authored over <strong className="text-foreground">15 peer-reviewed research publications</strong> in globally recognized journals, including IEEE Access, IEEE Open Journal of the Computer Society, Elsevier, MDPI, Springer Nature, and Tech Science Press. My research contributions cover areas such as neurodegenerative disease detection, cardiovascular risk modeling, medical image analysis, cybersecurity threat intelligence, financial fraud detection, and energy consumption forecasting.
               </p>
               <p>
-                My research contributions span advanced diagnostic frameworks for Parkinson's disease, Alzheimer's disease, diabetes mellitus, cardiovascular disease, and skin cancer using deep learning, vision transformers, and multimodal fusion. In parallel, I work extensively in cybersecurity and digital forensics, developing machine learning–based models for cryptocurrency fraud detection, threat prediction, intrusion analysis, and suspicious behavior modeling.
+                In addition to my research output, I serve on the <strong className="text-foreground">Editorial Board of the Journal of Neuroscience and Clinical Neurology</strong> and actively review manuscripts for several high-impact journals, including Elsevier, PLOS ONE, and IOS Press (Journal of Alzheimer's Disease). I am also the holder of a <strong className="text-foreground">UK-approved patent</strong>, reflecting my dedication to innovation and the practical application of advanced computational techniques.
               </p>
               <p>
-                I actively contribute to the scholarly community as a <strong className="text-foreground">certified reviewer</strong> for multiple Q1 journals, including Elsevier's Computers & Electrical Engineering and Biomedical Signal Processing and Control, PLOS ONE, and the Journal of Alzheimer's Disease published by IOS Press. I also hold a <strong className="text-foreground">UK-approved patent</strong> in computer science innovation.
+                My scientific accomplishments have been recognized by my election as an <strong className="text-foreground">Associate Member of Sigma Xi, The Scientific Research Honor Society</strong>, one of the most prestigious scientific organizations supporting global research excellence. I am currently pursuing my Master of Science in Computer Science at <strong className="text-foreground">California State University, Los Angeles</strong>, where my work focuses on advanced AI architectures, explainable machine learning, and ethical, human-centered intelligent systems.
               </p>
               <p>
-                My long-term vision is to contribute to impactful scientific innovation, support high-quality editorial and peer-review standards, and expand the application of artificial intelligence across healthcare, security, and sustainability to address real-world global challenges.
+                I am committed to pushing the boundaries of scientific discovery and developing technologies that contribute meaningfully to society, improve human well-being, and shape the future of AI research.
               </p>
             </div>
           </Card>
