@@ -47,12 +47,12 @@ const socialLinks = [
   {
     icon: Facebook,
     label: "Facebook",
-    href: "https://www.facebook.com/kanchonkumarbishnu",
+    href: "https://www.facebook.com/kanchonkumar.bishnu/",
   },
   {
     icon: Instagram,
     label: "Instagram",
-    href: "https://www.instagram.com/kanchonkumarbishnu",
+    href: "http://instagram.com/kanchon_bishnu/",
   },
 ];
 
