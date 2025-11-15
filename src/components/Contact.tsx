@@ -37,12 +37,12 @@ const socialLinks = [
   {
     icon: ExternalLink,
     label: "Google Scholar",
-    href: "https://scholar.google.com",
+    href: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
   },
   {
     icon: ExternalLink,
     label: "ResearchGate",
-    href: "https://www.researchgate.net",
+    href: "https://www.researchgate.net/profile/Kanchon-Bishnu",
   },
 ];
 
