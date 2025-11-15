@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, FileText } from "lucide-react";
+import { Mail, Github, Linkedin, FileText, Download } from "lucide-react";
 import profilePhoto from "@/assets/kanchon-photo.jpeg";
 
 const Hero = () => {
@@ -44,6 +44,12 @@ const Hero = () => {
                 <a href="#publications">
                   <FileText className="mr-2 h-5 w-5" />
                   View Publications
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="/Kanchon-Kumar-Bishnu_CV.pdf" download>
+                  <Download className="mr-2 h-5 w-5" />
+                  Download CV
                 </a>
               </Button>
             </div>
