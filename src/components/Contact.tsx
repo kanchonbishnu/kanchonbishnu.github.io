@@ -27,7 +27,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/kanchon-kumar-bishnu",
+    href: "https://www.linkedin.com/in/kanchonkumarbishnu/",
   },
   {
     icon: Github,
