@@ -42,8 +42,12 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(200 95% 35%), hsl(190 85% 45%));
     --gradient-secondary: linear-gradient(135deg, hsl(195 75% 50%), hsl(185 65% 55%));
     --gradient-hero: linear-gradient(135deg, hsl(205 90% 40%) 0%, hsl(195 85% 50%) 50%, hsl(185 75% 60%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(200 95% 35%) 0%, hsl(280 85% 55%) 100%);
+    --gradient-cyber: linear-gradient(90deg, hsl(180 100% 50%) 0%, hsl(280 100% 50%) 100%);
     --shadow-soft: 0 4px 20px hsla(200, 95%, 35%, 0.1);
     --shadow-medium: 0 8px 30px hsla(200, 95%, 35%, 0.15);
+    --shadow-neon: 0 0 20px hsla(195, 85%, 50%, 0.5), 0 0 40px hsla(195, 85%, 50%, 0.3);
+    --shadow-3d: 0 10px 30px hsla(200, 95%, 35%, 0.3), 0 20px 60px hsla(200, 95%, 35%, 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -95,8 +99,12 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(200 90% 45%), hsl(190 85% 55%));
     --gradient-secondary: linear-gradient(135deg, hsl(195 75% 55%), hsl(185 65% 60%));
     --gradient-hero: linear-gradient(135deg, hsl(205 85% 45%) 0%, hsl(195 80% 55%) 50%, hsl(185 70% 65%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(195 85% 50%) 0%, hsl(280 85% 60%) 100%);
+    --gradient-cyber: linear-gradient(90deg, hsl(180 100% 60%) 0%, hsl(280 100% 60%) 100%);
     --shadow-soft: 0 4px 20px hsla(195, 85%, 50%, 0.15);
     --shadow-medium: 0 8px 30px hsla(195, 85%, 50%, 0.2);
+    --shadow-neon: 0 0 25px hsla(195, 85%, 50%, 0.6), 0 0 50px hsla(195, 85%, 50%, 0.4);
+    --shadow-3d: 0 10px 30px hsla(195, 85%, 50%, 0.4), 0 20px 60px hsla(195, 85%, 50%, 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
