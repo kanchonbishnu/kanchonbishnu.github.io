@@ -22,15 +22,16 @@ const Hero = () => {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
               Kanchon Kumar{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Bishnu</span>
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Bishnu
+              </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Advancing intelligent systems through Machine Learning, Health Informatics, and Cybersecurity Analytics at
-              California State University, Los Angeles
+              Advancing intelligent systems through Machine Learning, Health Informatics, and Cybersecurity Analytics at California State University, Los Angeles
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
                 asChild
               >
@@ -46,24 +47,24 @@ const Hero = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://www.linkedin.com/in/kanchonkumarbishnu/" download>
+                <a href="/Kanchon-Kumar-Bishnu_CV.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   Download CV
                 </a>
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <a
-                href="https://www.linkedin.com/in/kanchonkumarbishnu/"
-                target="_blank"
+              <a 
+                href="https://www.linkedin.com/in/kanchon-kumar-bishnu" 
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all shadow-md hover:shadow-lg"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="https://github.com/kanchonbishnu"
-                target="_blank"
+              <a 
+                href="https://github.com/kanchon" 
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all shadow-md hover:shadow-lg"
               >
