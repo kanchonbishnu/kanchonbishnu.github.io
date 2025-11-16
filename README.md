@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# 🌐 Kanchonbishnu.com – Personal Portfolio Website
 
-## Project info
+Welcome to the official GitHub repository for **Kanchon Kumar Bishnu’s** personal portfolio website — **[kanchonbishnu.com](https://kanchonbishnu.com)**.
 
-**URL**: https://lovable.dev/projects/d77adb50-f2ab-4000-9e66-08fd9fb67365
+This website showcases my professional background, technical skills, projects, research publications, certifications, and ongoing work in **Software Engineering**, **Machine Learning**, and **Cybersecurity**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 About the Project
 
-**Use Lovable**
+This portfolio was built to provide a centralized, professional overview of my:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d77adb50-f2ab-4000-9e66-08fd9fb67365) and start prompting.
+- Academic journey
+- Software engineering experience
+- Research contributions
+- Cybersecurity interests and activities
+- Recognitions, certifications, and publications
 
-Changes made via Lovable will be committed automatically to this repo.
+The website is designed to be:
 
-**Use your preferred IDE**
+- Clean and minimal
+- Fully responsive
+- Easy to maintain and extend
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Key Features
 
-Follow these steps:
+- **Hero Section** with a short introduction and call-to-action links  
+- **About Me**: education, roles, and a brief bio  
+- **Skills**: programming languages, tools, and domains (ML, Cybersecurity, Web Dev, etc.)  
+- **Projects**: selected software, ML, and cybersecurity projects with descriptions and links  
+- **Research & Publications**: Q1 journal articles, conference papers, citations, and patent(s)  
+- **Certifications & Achievements**  
+- **Contact Section** with direct links to email, LinkedIn, and GitHub  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠️ Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+> Update this section according to the actual implementation.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Core**: HTML5, CSS3, JavaScript  
+- **Optional / Depending on implementation**:
+  - Framework: React / Next.js / plain HTML-CSS-JS
+  - Styling: Tailwind CSS / Custom CSS / Bootstrap
+- **Version Control**: Git & GitHub  
+- **Deployment**: (e.g., Vercel / Netlify / GitHub Pages / Custom Hosting)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure (Example)
 
-**Use GitHub Codespaces**
+> Your actual structure may differ. Adjust as needed.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d77adb50-f2ab-4000-9e66-08fd9fb67365) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+/
+├── public/              # Static assets (favicon, images, etc.)
+├── src/                 # Source files (if using a framework like React)
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page-level components or views
+│   ├── assets/          # Images, icons, etc.
+│   ├── styles/          # Global and component styles
+│   └── App.js           # Root application file
+├── index.html           # Entry HTML (for static sites)
+├── package.json         # Project metadata & dependencies (for Node-based setups)
+└── README.md
