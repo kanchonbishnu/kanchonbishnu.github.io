@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardTitle } from "@/components/ui/card";
 
 const skillCategories = [
   {
@@ -26,38 +26,41 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" data-animate className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Technical Skills
+          <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">Capabilities</p>
+          <h2 className="mt-3 text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Technical Stack
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across AI, data science, and cybersecurity
+            A multi-disciplinary toolkit across research, engineering, and analytics.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid max-w-6xl mx-auto gap-6 md:grid-cols-2">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow border-2">
-              <CardHeader>
+            <Card
+              key={index}
+              className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-xl transition-all hover:-translate-y-1 hover:shadow-2xl backdrop-blur dark:border-white/10 dark:bg-slate-900/60"
+            >
+              <div className="flex items-center justify-between">
                 <CardTitle className="text-xl flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary"></span>
+                  <span className="h-2 w-2 rounded-full bg-gradient-to-r from-primary to-secondary" />
                   {category.title}
                 </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <Badge 
-                      key={skillIndex} 
-                      variant="secondary"
-                      className="px-3 py-1 hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
+                <span className="text-xs uppercase tracking-[0.4em] text-muted-foreground">Core</span>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {category.skills.map((skill, skillIndex) => (
+                  <Badge
+                    key={skillIndex}
+                    variant="secondary"
+                    className="rounded-full border border-primary/20 bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-foreground shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:bg-slate-900/50"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
             </Card>
           ))}
         </div>
