@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardTitle } from "@/components/ui/card";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
@@ -48,69 +48,68 @@ const education = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-background">
+    <section id="experience" data-animate className="py-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
-          {/* Work Experience */}
-          <div className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Work Experience
-              </h2>
-            </div>
-            <div className="space-y-6">
+        <div className="text-center">
+          <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">Journey</p>
+          <h2 className="mt-3 text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Experience & Education
+          </h2>
+        </div>
+        <div className="mt-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">Work Experience</p>
+            <div className="mt-8 space-y-10">
               {experiences.map((exp, index) => (
-                <Card key={index} className="shadow-lg hover:shadow-xl transition-all border-2">
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                        <Briefcase className="h-6 w-6 text-primary-foreground" />
+                <div key={exp.title} className="flex gap-6">
+                  <div className="flex flex-col items-center">
+                    <span className="relative flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary/50 bg-background shadow-sm">
+                      <span className="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-secondary" />
+                    </span>
+                    {index !== experiences.length - 1 && (
+                      <span className="mt-2 w-px flex-1 rounded-full bg-gradient-to-b from-primary/40 to-transparent" />
+                    )}
+                  </div>
+                  <Card className="flex-1 rounded-3xl border border-white/40 bg-white/80 p-6 shadow-xl backdrop-blur dark:border-white/10 dark:bg-slate-900/60">
+                    <div className="flex flex-wrap items-center justify-between gap-4">
+                      <div>
+                        <CardTitle className="text-xl">{exp.title}</CardTitle>
+                        <p className="mt-1 text-sm font-semibold text-primary">{exp.organization}</p>
                       </div>
-                      <div className="flex-1">
-                        <CardTitle className="text-xl mb-1">{exp.title}</CardTitle>
-                        <p className="text-primary font-semibold">{exp.organization}</p>
-                        <div className="flex flex-wrap gap-2 mt-2 text-sm text-muted-foreground">
-                          <span>{exp.period}</span>
-                          <span>•</span>
-                          <span>{exp.location}</span>
-                        </div>
-                      </div>
+                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                        <Briefcase className="h-4 w-4" />
+                        {exp.period}
+                      </span>
                     </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
-                  </CardContent>
-                </Card>
+                    <div className="mt-3 flex flex-wrap gap-2 text-sm text-muted-foreground">
+                      <span>{exp.location}</span>
+                    </div>
+                    <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
+                  </Card>
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Education */}
           <div>
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Education
-              </h2>
-            </div>
-            <div className="space-y-6">
-              {education.map((edu, index) => (
-                <Card key={index} className="shadow-lg hover:shadow-xl transition-all border-2">
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                        <GraduationCap className="h-6 w-6 text-primary-foreground" />
-                      </div>
-                      <div className="flex-1">
-                        <CardTitle className="text-xl mb-1">{edu.degree}</CardTitle>
-                        <p className="text-primary font-semibold">{edu.institution}</p>
-                        <div className="flex flex-wrap gap-2 mt-2 text-sm text-muted-foreground">
-                          <span>{edu.period}</span>
-                          <span>•</span>
-                          <span className="font-semibold">{edu.gpa}</span>
-                        </div>
+            <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">Education</p>
+            <div className="mt-8 space-y-6">
+              {education.map((edu) => (
+                <Card key={edu.degree} className="rounded-3xl border border-white/40 bg-white/80 p-6 shadow-xl backdrop-blur dark:border-white/10 dark:bg-slate-900/60">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                      <GraduationCap className="h-6 w-6" />
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="text-xl">{edu.degree}</CardTitle>
+                      <p className="mt-1 font-semibold text-primary">{edu.institution}</p>
+                      <div className="mt-2 flex flex-wrap gap-2 text-sm text-muted-foreground">
+                        <span>{edu.period}</span>
+                        <span>•</span>
+                        <span className="font-semibold">{edu.gpa}</span>
                       </div>
                     </div>
-                  </CardHeader>
+                  </div>
                 </Card>
               ))}
             </div>

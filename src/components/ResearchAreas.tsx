@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardTitle } from "@/components/ui/card";
 import { Brain, Shield, Heart, Battery, Globe } from "lucide-react";
 
 const areas = [
@@ -31,35 +31,35 @@ const areas = [
 
 const ResearchAreas = () => {
   return (
-    <section id="research" className="py-20 bg-gradient-to-b from-background to-muted/30">
+    <section id="research" data-animate className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Research Areas
+          <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">Research</p>
+          <h2 className="mt-3 text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Exploring Intelligent Systems
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Exploring the intersection of AI, healthcare, and security
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Grounded in multi-disciplinary collaborations spanning biomedical AI, cybersecurity, and sustainable intelligence.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid max-w-6xl mx-auto gap-6 md:grid-cols-2 lg:grid-cols-3">
           {areas.map((area, index) => {
             const Icon = area.icon;
             return (
-              <Card 
-                key={index} 
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2"
+              <Card
+                key={index}
+                className="group relative overflow-hidden rounded-3xl border border-white/40 bg-white/70 p-6 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl backdrop-blur dark:border-white/10 dark:bg-slate-900/60"
               >
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Icon className="h-7 w-7 text-primary-foreground" />
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style={{ background: 'linear-gradient(135deg, hsla(200,95%,35%,0.15), hsla(185,65%,55%,0.1))' }} />
+                <div className="relative z-10">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                    <Icon className="h-7 w-7" />
                   </div>
                   <CardTitle className="text-xl">{area.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
                     {area.description}
                   </p>
-                </CardContent>
+                </div>
               </Card>
             );
           })}

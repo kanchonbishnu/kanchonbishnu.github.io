@@ -2,9 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, FileText, Download } from "lucide-react";
 import profilePhoto from "@/assets/kanchon-photo.jpeg";
 
+const focusAreas = [
+  "Responsible AI",
+  "Health Informatics",
+  "Cybersecurity",
+  "Explainable ML",
+];
+
+const stats = [
+  { value: "15+", label: "Peer-reviewed Papers" },
+  { value: "5", label: "Years of Research" },
+  { value: "6", label: "Active Collaborations" },
+];
+
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+    <section data-animate className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
       {/* 3D Grid Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
         <div className="absolute inset-0" style={{
@@ -53,7 +66,7 @@ const Hero = () => {
         }
       `}</style>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container relative z-10 mx-auto px-6 py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text content */}
           <div className="space-y-6 animate-slide-in-left">
@@ -76,6 +89,16 @@ const Hero = () => {
             <p className="text-xl text-muted-foreground leading-relaxed">
               Advancing intelligent systems through Machine Learning, Health Informatics, and Cybersecurity Analytics at California State University, Los Angeles
             </p>
+            <div className="flex flex-wrap gap-3">
+              {focusAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button 
                 size="lg" 
@@ -153,13 +176,27 @@ const Hero = () => {
                 {/* Tech overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 pointer-events-none"></div>
               </div>
-              
+
+              <div className="absolute -left-10 bottom-10 w-48 rounded-2xl border border-white/50 bg-white/70 p-5 text-sm shadow-xl backdrop-blur dark:border-white/10 dark:bg-slate-900/60">
+                <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Currently exploring</p>
+                <p className="mt-2 text-base font-semibold text-foreground">Multimodal AI for Parkinson's detection</p>
+                <p className="mt-1 text-xs text-muted-foreground">California State University, Los Angeles</p>
+              </div>
+
               {/* Floating particles */}
               <div className="absolute top-1/4 -left-8 w-2 h-2 bg-primary rounded-full animate-ping"></div>
               <div className="absolute top-3/4 -right-8 w-2 h-2 bg-secondary rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
               <div className="absolute top-1/2 -right-12 w-2 h-2 bg-accent rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
           </div>
+        </div>
+        <div className="mt-10 grid gap-4 rounded-3xl border bg-card/80 p-6 shadow-lg backdrop-blur sm:grid-cols-3">
+          {stats.map((item) => (
+            <div key={item.label} className="text-center">
+              <p className="text-3xl font-bold text-foreground">{item.value}</p>
+              <p className="text-sm font-medium text-muted-foreground">{item.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
