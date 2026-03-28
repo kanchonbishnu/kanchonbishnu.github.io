@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, FileText, Download } from "lucide-react";
-import profilePhoto from "@/assets/kanchon-photo.jpeg";
 
 const focusAreas = [
   "Responsible AI",
@@ -168,9 +167,9 @@ const Hero = () => {
                      transform: 'perspective(1000px) rotateY(-5deg)'
                    }}>
                 <img
-                  src={profilePhoto}
+                  src="/kalbela-feature.png"
                   alt="Kanchon Kumar Bishnu - AI Research Scientist"
-                  className="w-80 h-80 md:w-96 md:h-96 object-cover"
+                  className="w-80 md:w-96 object-contain bg-white dark:bg-slate-900"
                 />
                 
                 {/* Tech overlay effect */}
@@ -182,6 +181,7 @@ const Hero = () => {
                 <p className="mt-2 text-base font-semibold text-foreground">Multimodal AI for Parkinson's detection</p>
                 <p className="mt-1 text-xs text-muted-foreground">California State University, Los Angeles</p>
               </div>
+
 
               {/* Floating particles */}
               <div className="absolute top-1/4 -left-8 w-2 h-2 bg-primary rounded-full animate-ping"></div>
