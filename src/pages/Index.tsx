@@ -4,6 +4,8 @@ import About from "@/components/About";
 import ResearchAreas from "@/components/ResearchAreas";
 import Publications from "@/components/Publications";
 import Skills from "@/components/Skills";
+import Certifications from "@/components/Certifications";
+import MediaPress from "@/components/MediaPress";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -38,6 +40,8 @@ const Index = () => {
           <ResearchAreas />
           <Publications />
           <Skills />
+          <Certifications />
+          <MediaPress />
           <Experience />
           <Contact />
         </main>

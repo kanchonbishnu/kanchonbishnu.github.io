@@ -2,16 +2,17 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const achievements = [
-  { value: "15+", label: "Peer-reviewed publications" },
+  { value: "21+", label: "Research publications" },
   { value: "3", label: "Research domains" },
-  { value: "6", label: "Editorial & reviewer roles" },
+  { value: "35+", label: "Peer reviews completed" },
   { value: "1", label: "Patent granted" },
 ];
 
 const commitments = [
   "Sigma Xi Associate Member",
+  "IEEE Graduate Student Member",
   "Editorial Board, Journal of Neuroscience and Clinical Neurology",
-  "Certified reviewer for Elsevier, PLOS ONE, IOS Press",
+  "Reviewer: PLOS ONE (×8), Elsevier (×16), Springer Nature (×4), SAGE (×7)",
   "MS in Computer Science @ Cal State LA",
 ];
 

@@ -10,7 +10,7 @@ const focusAreas = [
 ];
 
 const stats = [
-  { value: "15+", label: "Peer-reviewed Papers" },
+  { value: "21+", label: "Research Publications" },
   { value: "5", label: "Years of Research" },
   { value: "6", label: "Active Collaborations" },
 ];
