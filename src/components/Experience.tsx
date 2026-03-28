@@ -29,7 +29,7 @@ const education = [
   {
     degree: "MS in Computer Science",
     institution: "California State University, Los Angeles",
-    period: "Aug 2023 - Present",
+    period: "Aug 2023 - May 2025",
     gpa: "CGPA: 3.02/4.00",
   },
   {

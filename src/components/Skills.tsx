@@ -4,23 +4,23 @@ import { Card, CardTitle } from "@/components/ui/card";
 const skillCategories = [
   {
     title: "Programming & Tools",
-    skills: ["Python", "C++", "JavaScript", "HTML", "CSS", "Git", "Linux", "LaTeX", "Jupyter Notebook", "Google Colab"],
+    skills: ["Python", "C++", "JavaScript", "HTML", "CSS", "Git", "Linux", "LaTeX", "Jupyter Notebook", "Google Colab", "Docker", "Cloud Computing"],
   },
   {
     title: "Machine Learning & AI",
-    skills: ["TensorFlow", "PyTorch", "scikit-learn", "Keras", "CNN", "LSTM", "Vision Transformers", "PCA", "UMAP", "Genetic Algorithms", "SHAP", "LIME"],
+    skills: ["TensorFlow", "PyTorch", "scikit-learn", "Keras", "CNN", "LSTM", "Vision Transformers", "Attention Mechanisms", "Bayesian Neural Networks", "Ensemble Learning", "Anomaly Detection", "Time-Series Forecasting", "PCA", "UMAP", "Genetic Algorithms", "SHAP", "LIME"],
   },
   {
     title: "Data Science & Analytics",
-    skills: ["NumPy", "pandas", "Matplotlib", "Seaborn", "Plotly", "Statistical Modeling", "Data Visualization"],
+    skills: ["NumPy", "pandas", "OpenCV", "Matplotlib", "Seaborn", "Plotly", "Statistical Modeling", "Data Visualization"],
   },
   {
     title: "Cybersecurity",
-    skills: ["Network Analysis", "Threat Detection", "Intrusion Detection", "Secure Software Development", "Cryptocurrency Fraud Detection"],
+    skills: ["Network Analysis", "Threat Detection", "Intrusion Detection", "Digital Forensics", "Secure Software Development", "Cryptocurrency Fraud Detection"],
   },
   {
     title: "Health Informatics",
-    skills: ["Medical Imaging", "Diagnostic AI", "Disease Prediction", "Healthcare Analytics"],
+    skills: ["Medical Imaging", "Diagnostic AI", "Disease Prediction", "Healthcare Analytics", "Multimodal Fusion"],
   },
 ];
 

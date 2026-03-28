@@ -1,13 +1,13 @@
 import { Card, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Award, FileCheck } from "lucide-react";
+import { BookOpen, Award, FileCheck, Mic, BookMarked } from "lucide-react";
 
 const highlights = [
   {
     icon: BookOpen,
-    title: "15+ Peer-Reviewed Papers",
+    title: "20+ Research Publications",
     description:
-      "Published in IEEE Access, IEEE Open Journal of Computer Society, Elsevier, MDPI, Springer Nature, Tech Science Press, and more.",
+      "Peer-reviewed journal articles, IEEE conference proceedings, and scholarly book chapters in IEEE, Elsevier, MDPI, Nature Portfolio, and IGI Global.",
   },
   {
     icon: Award,
@@ -17,9 +17,9 @@ const highlights = [
   },
   {
     icon: FileCheck,
-    title: "Certified Reviewer",
+    title: "35+ Peer Reviews",
     description:
-      "Editorial board member and reviewer for Elsevier, PLOS ONE, IOS Press (Journal of Alzheimer's Disease), and others.",
+      "Editorial board member and active reviewer for PLOS ONE, Elsevier, Springer Nature, and SAGE across 6 journals.",
   },
 ];
 
@@ -59,7 +59,7 @@ const domains = [
   },
 ];
 
-const selectedPublications = [
+const journalPublications = [
   {
     title:
       "Evaluation of Feature Transformation and Machine Learning Models on Early Detection of Diabetes Melitus",
@@ -83,7 +83,7 @@ const selectedPublications = [
     title:
       "Leveraging Machine Learning for Insights and Predictions in Synthetic E-Commerce Data in the USA: A Comprehensive Analysis",
     authors:
-      "MR Islam, M Hossain, M Alam, MM Khan, MM Karim, MFR Rabbi, et al.",
+      "MR Islam, M Hossain, M Alam, MM Khan, MM Karim, MFR Rabbi, KK Bishnu, et al.",
     journal: "Journal of Ecohumanism",
     year: "2025",
     citations: 15,
@@ -100,27 +100,8 @@ const selectedPublications = [
   },
   {
     title:
-      "Machine Learning-Based Detection and Analysis of Suspicious Activities in Bitcoin Wallet Transactions in the USA",
-    authors:
-      "MZ Islam, MS Islam, SA Reza, PK Bhowmik, KK Bishnu, MS Rahman, et al.",
-    journal: "arXiv preprint arXiv:2504.03092",
-    year: "2025",
-    citations: 11,
-    url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_3JpA_YAAAAJ&citation_for_view=_3JpA_YAAAAJ:zYLM7Y9cAGgC",
-  },
-  {
-    title:
-      "AI-driven cybersecurity threat detection: Building resilient defense systems using predictive analytics",
-    authors: "BC Das, MS Sartaz, SA Reza, A Hossain, MD Nasiruddin, KK Bishnu",
-    journal: "arXiv preprint arXiv:2508.01422",
-    year: "2025",
-    citations: 6,
-    url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_3JpA_YAAAAJ&citation_for_view=_3JpA_YAAAAJ:kNdYIx-mwKoC",
-  },
-  {
-    title:
       "A Novel Data-Driven Multi-Branch LSTM Architecture with Attention Mechanisms for Forecasting Electric Vehicle Adoption",
-    authors: "MM Rahaman, MR Islam, MMTG Manik, MM Aziz, IR Noman, et al.",
+    authors: "MM Rahaman, MR Islam, MMTG Manik, MM Aziz, IR Noman, KK Bishnu, et al.",
     journal: "World Electric Vehicle Journal",
     year: "2025",
     citations: 5,
@@ -193,6 +174,96 @@ const selectedPublications = [
     citations: 0,
     url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_3JpA_YAAAAJ&citation_for_view=_3JpA_YAAAAJ:3fE2CSJIrl8C",
   },
+  {
+    title:
+      "Evaluate all order of every element of higher 100, 105 and 107 order of group for multiplication composition",
+    authors:
+      "MA Mannan, KK Bishnu, S Islam, MSA Chowdhury, MA Hossain, MS Islam, SJE Khan, H Khatun",
+    journal: "Edelweiss Applied Science and Technology",
+    year: "2025",
+    citations: 0,
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "Algorithmic diagnostics: Machine learning, cancer detection and the posthuman transformation of medical knowledge",
+    authors: "AQ Mozumder, D Ghosh, M Raihan, A Islam, R Paul, KK Bishnu",
+    journal: "International Journal of Science and Research Archive",
+    year: "2025",
+    citations: 0,
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "Seismic intelligence: Machine learning models for earthquake magnitude estimation",
+    authors: "KK Bishnu, BC Das, MS Islam, MSA Chowdhury, S Islam, MA Khan",
+    journal: "Mathematical Modelling and Engineering Problems",
+    year: "2025",
+    citations: 0,
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+];
+
+const conferenceProceedings = [
+  {
+    title:
+      "FuseAttenX: Leveraging attention-enhanced deep learning for business strategy optimization",
+    authors: "FU Mahmud, A Rahman, MA Khan, KK Bishnu, AA Eva, J Maua",
+    venue: "IEEE 4th International Conference on Computing and Machine Intelligence (ICMI 2025)",
+    year: "2025",
+    note: "pp. 1–6. IEEE",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "A data-driven temporal convolutional network for predicting material removal rate in the chemical mechanical planarization process",
+    authors: "MR Islam, MM Rahaman, MH Rahman, KK Bishnu, IR Noman, MM Aziz",
+    venue: "2nd International Conference on Artificial Intelligence and Digital Management (ICAIDM 2025)",
+    year: "2025",
+    note: "pp. 13–20. IEEE",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "Model selection for water quality prediction: A case study using public potability data",
+    authors: "MM Aziz, MM Rahaman, KK Bishnu, MR Islam, IR Noman, MH Rahman",
+    venue: "2nd International Conference on Artificial Intelligence and Digital Management (ICAIDM 2025)",
+    year: "2025",
+    note: "pp. 21–28. IEEE",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "Optimizing detection of human cancer cells in breast cancer via machine learning and feature selection",
+    authors: "KK Bishnu",
+    venue: "International Conference on Electrical, Computer and Energy Technologies (ICECET 2025), Paris, France",
+    year: "2025",
+    note: "Oral Presentation — July 3–6, 2025",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+];
+
+const bookChapters = [
+  {
+    title:
+      "Machine learning models for fraud detection in promotional activities",
+    authors: "M Ahmad, KK Bishnu, MR Islam, MK Rahman",
+    book: "Harnessing AI for Point-of-Sale Optimization",
+    publisher: "IGI Global Scientific Publishing",
+    year: "2026",
+    note: "pp. 197–226",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
+  {
+    title:
+      "Cryptocurrency and blockchain forensics: Tracing digital transactions",
+    authors: "M Ahmad, RER Shawon, MS Hasan, KK Bishnu",
+    book: "Cyber Forensic Frameworks for User-Centric Human Threat Intelligence Analysis",
+    publisher: "IGI Global Scientific Publishing",
+    year: "2026",
+    note: "pp. 467–498",
+    url: "https://scholar.google.com/citations?user=_3JpA_YAAAAJ&hl=en",
+  },
 ];
 
 const Publications = () => {
@@ -242,6 +313,7 @@ const Publications = () => {
         </div>
 
         <div className="mx-auto mt-12 grid max-w-6xl items-start gap-8">
+          {/* Research Domains */}
           <Card className="rounded-3xl border border-border/60 p-6 shadow-xl">
             <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">
               Research domains
@@ -275,14 +347,22 @@ const Publications = () => {
             </div>
           </Card>
 
+          {/* Journal Articles */}
           <Card className="rounded-3xl border border-border/60 p-6 shadow-xl">
-            <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">
-              Selected work
-            </p>
-            <CardTitle className="mt-2 text-2xl">Recent Publications</CardTitle>
-            <p className="mt-2 text-sm text-muted-foreground">Citations: 124</p>
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                <BookOpen className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">
+                  Section A
+                </p>
+                <CardTitle className="text-2xl">Peer-Reviewed Journal Articles</CardTitle>
+              </div>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">Total citations: 124+</p>
             <div className="mt-6 space-y-6 divide-y divide-border/70">
-              {selectedPublications.map((pub) => (
+              {journalPublications.map((pub) => (
                 <div key={pub.title} className="pt-6 first:pt-0">
                   <a
                     href={pub.url}
@@ -319,6 +399,89 @@ const Publications = () => {
               </a>
             </div>
           </Card>
+
+          {/* Conference Proceedings */}
+          <Card className="rounded-3xl border border-border/60 p-6 shadow-xl">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                <Mic className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">
+                  Section B
+                </p>
+                <CardTitle className="text-2xl">Conference Proceedings</CardTitle>
+              </div>
+            </div>
+            <div className="mt-6 space-y-6 divide-y divide-border/70">
+              {conferenceProceedings.map((proc) => (
+                <div key={proc.title} className="pt-6 first:pt-0">
+                  <a
+                    href={proc.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                      {proc.title}
+                    </h3>
+                  </a>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {proc.authors}
+                  </p>
+                  <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                    <Badge variant="outline">{proc.venue}</Badge>
+                    <span>{proc.year}</span>
+                    {proc.note && (
+                      <span className="text-xs text-muted-foreground">• {proc.note}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          {/* Book Chapters */}
+          <Card className="rounded-3xl border border-border/60 p-6 shadow-xl">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                <BookMarked className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.4em] text-muted-foreground">
+                  Section C
+                </p>
+                <CardTitle className="text-2xl">Book Chapters</CardTitle>
+              </div>
+            </div>
+            <div className="mt-6 space-y-6 divide-y divide-border/70">
+              {bookChapters.map((chapter) => (
+                <div key={chapter.title} className="pt-6 first:pt-0">
+                  <a
+                    href={chapter.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                      {chapter.title}
+                    </h3>
+                  </a>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {chapter.authors}
+                  </p>
+                  <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                    <Badge variant="outline">{chapter.book}</Badge>
+                    <span>{chapter.publisher}</span>
+                    <span>• {chapter.year}</span>
+                    {chapter.note && (
+                      <span className="text-xs text-muted-foreground">• {chapter.note}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
         </div>
 
         <div className="mt-12 text-center">
@@ -331,7 +494,7 @@ const Publications = () => {
                 UK Patent Holder
               </h3>
               <p className="text-sm text-muted-foreground">
-                Computer science innovation
+                AI-based data-processing technology
               </p>
             </div>
           </Card>
